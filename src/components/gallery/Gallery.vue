@@ -1,16 +1,15 @@
 <script setup>
-    import axios from "axios"
-    import { ref, onMounted } from "vue";
+import axios from 'axios'
+import { ref, onMounted } from 'vue'
 
-    const images = ref([])
-    const filter = ref("")
+const images = ref([])
+const filter = ref('')
 
-    onMounted(() => {
-        axios.get("https://gastropub.webexam-mcdm.dk/api/images").then((res) => {
-            images.value = res.data;
-            console.log(images);
-        })
-    })
+onMounted(() => {
+  axios.get('https://gastropub.webexam-mcdm.dk/api/images').then((res) => {
+    images.value = res.data
+  })
+})
 </script>
 
 <template>

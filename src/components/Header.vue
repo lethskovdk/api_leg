@@ -1,9 +1,7 @@
-<script setup>
+<script>
 import { RouterLink } from 'vue-router'
 import Modal from './Modal.vue'
 import { defineProps } from 'vue'
-
-var showModal: false
 
 export default {
   components: {

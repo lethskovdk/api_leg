@@ -1,11 +1,21 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import axios from 'axios'
 
-import '../src/index.css'
+import './styles/main.scss'
 
-const app = createApp(App)
+Promise.all([axios.get('https://gastropub.webexam-mcdm.dk/api/images'), axios.get('https://gastropub.webexam-mcdm.dk/api/texts')]).then((res) => {
+    window.img = res[0].data;
+    window.txt = res[1].data;
 
-app.use(router)
+    const app = createApp(App)
 
-app.mount('#app')
+    app.use(router)
+
+    app.mount('#app')
+})
+
+
+
+

@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from 'vue'
+import ModalForm from './Forms/ModalForm.vue'
 
 const props = defineProps({show: Boolean})
 </script>
@@ -10,6 +11,7 @@ const props = defineProps({show: Boolean})
             <div class="modal-wrapper">
                 <div class="modal-container">
                     <button class="modal-default-button text-white" @click="$emit('close')">X</button>
+                    <ModalForm></ModalForm>
                 </div>
             </div>
         </div>

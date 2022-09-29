@@ -9,7 +9,7 @@
             <div class="w-1/3 z-10">
                 <h1 class="text-[84px] text-white leading-none">GastoPub</h1>
                 <p class="text-[18px] text-white mb-9">Uanset om du skal have en forretningsfrokost, en romantisk middag ved levende lys eller bare en drink efter en travl dag, vil GastroPub altid imødekomme dine behov.</p>
-                <a href="" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Om os</a>
+                <a href="/aboutus" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Om os</a>
             </div>
         </div>
     </section>
@@ -19,7 +19,7 @@
             <div class="w-1/3 z-10">
                 <h1 class="text-[84px] text-white leading-none">Fantastisk Mad</h1>
                 <p class="text-[18px] text-white mb-9">Vores retter er tilberedt med friske råvarer fra danske økologiske gårde og egen køkkenhave. Der er kærlighed i hver ret fra kokkens hjerte.</p>
-                <a href="" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Menu</a>
+                <a href="/Menu" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Menu</a>
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@
             <div class="w-1/3 z-10">
                 <h1 class="text-[84px] text-white leading-none">luksuriøst interiør</h1>
                 <p class="text-[18px] text-white mb-9">Vores lokaler er indrettet fra det romantiske møde, til det luksuriøse selskab. Hyggelige omgivelser til enhver lejlighed.</p>
-                <a href="" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Galleri</a>
+                <a href="/Gallery" class="bg-[#F1B356] text-black font-bold py-4 px-14 rounded-full">Galleri</a>
             </div>
         </div>
     </section>

@@ -1,13 +1,15 @@
 <script setup>
-  import { defineProps } from "vue";
+import { defineProps } from "vue"
 
-  const props = defineProps({name: String, ingredients: String, price: String})
+const props = defineProps({name: String, ingredients: String, price: String})
 </script>
 
 <template>
-  <div class="grid grid-cols-2 grid-rows-2">
-    <h3>{{name}}</h3>
-    <div class="row-span-2">{{price}}</div>
-    <p>{{ingredients}}</p>
+  <div class="dish">
+    <div class="dish__info">
+      <h3>{{name}}</h3>
+      <p>{{ingredients}}</p>
+    </div>
+    <p class="price">{{price}}</p>
   </div>
 </template>

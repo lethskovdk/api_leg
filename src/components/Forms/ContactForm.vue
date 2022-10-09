@@ -1,30 +1,29 @@
 <script setup>
-  import { ref } from "vue";
-  import axios from 'axios'
+import { ref } from 'vue'
+import axios from 'axios'
 
-  const form = ref(null);
-  const doneMessage = ref(null);
-  const loading = ref(false);
-  
+const form = ref(null)
+const doneMessage = ref(null)
+const loading = ref(false)
 
-  const handleSubmit = (e) => {
-    loading.value = true;
-    e.preventDefault();
-    const data = new FormData(form.value);
-    const output = {};
-    for (const pair of data.entries()) {
-      output[pair[0]] = pair[1];
-    }
 
-    axios.post('https://gastropub.webexam-mcdm.dk/api/contacts', output).then(res => {
-      if (res.status == 201) doneMessage.value = res.data;
-      else console.error(res.message)
-
-      loading.value = false;
-    })  
+const handleSubmit = (e) => {
+  loading.value = true
+  e.preventDefault()
+  const data = new FormData(form.value)
+  const output = {}
+  for (const pair of data.entries()) {
+    output[pair[0]] = pair[1]
   }
 
+  axios.post('https://gastropub.webexam-mcdm.dk/api/contacts', output).then(res => {
+    console.log(output)
+    if (res.status == 201) doneMessage.value = res.data
+    else console.error(res.message)
 
+    loading.value = false
+  })
+}
 </script>
 
 <template>

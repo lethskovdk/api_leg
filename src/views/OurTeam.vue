@@ -1,7 +1,10 @@
-<script>
+<script setup>
+import Hero from '../components/hero/Hero.vue'
+import { ref } from 'vue'
 
+const imgs = ref(window.img)
 </script>
 
 <template>
-    <h1>Our Team</h1>
+    <Hero :img-url="imgs[3].url" heading="News"></Hero>
 </template>

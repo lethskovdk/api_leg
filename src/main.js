@@ -15,7 +15,3 @@ Promise.all([axios.get('https://gastropub.webexam-mcdm.dk/api/images'), axios.ge
 
     app.mount('#app')
 })
-
-
-
-

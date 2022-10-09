@@ -16,24 +16,28 @@ export default {
 </script>
 
 <template>
-    <header class="h-24 mb-[-6rem] sticky top-0  z-50">
-        <nav class="h-full flex items-center justify-between flex-wrap">
+    <header class="header">
+        <nav class="header__nav">
             <div class="container m-auto flex items-center justify-between">
-                <div>
+                <div class="header__logo-area">
 
                 </div>
 
-                <div class="text-white">
-                    <RouterLink class="mr-7" to="/">Home</RouterLink>
-                    <RouterLink class="mr-7" to="/AboutUs">Om os</RouterLink>
-                    <RouterLink class="mr-7" to="/OurTeam">Vores Team</RouterLink>
-                    <RouterLink class="mr-7" to="/Menu">Menu</RouterLink>
-                    <RouterLink class="mr-7" to="/Gallery">Gallery</RouterLink>
-                    <RouterLink class="mr-7" to="/News">Nyheder</RouterLink>
-                    <RouterLink class="mr-7" to="/Contact">Kontakt</RouterLink>
-                    <button id="show-modal" class="bg-[#F1B356] hover:bg-[#a67c3c] text-black font-bold py-3 px-6 rounded-full" @click="showModal = true">Book bord</button>
-
-                </div>
+                <header class="header__main-menu-area">
+                  <RouterLink class="mr-7" to="/">Home</RouterLink>
+                  <div class="dropdown">
+                    <button class="mr-7 dropbtn">om os</button>
+                    <div class="dropdown-content">
+                      <RouterLink to="/AboutUs">Om os</RouterLink>
+                      <RouterLink to="/OurTeam">Vores Team</RouterLink>
+                    </div>
+                  </div>
+                  <RouterLink class="mr-7" to="/Menu">Menu</RouterLink>
+                  <RouterLink class="mr-7" to="/Gallery">Gallery</RouterLink>
+                  <RouterLink class="mr-7" to="/News">Nyheder</RouterLink>
+                  <RouterLink class="mr-7" to="/Contact">Kontakt</RouterLink>
+                  <button id="show-modal" class="btn" @click="showModal = true">Book bord</button>
+                </header>
             </div>
         </nav>
     </header>
